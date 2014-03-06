@@ -14,7 +14,8 @@ e.g, what "type" and "id" mean in the context of the rest of the web.
     { "@context": {
         "id": "@id",
         "type": "@type",
-        "FeatureCollection": "http://example.com/vocab#FeatureCollection" 
+        "FeatureCollection": "http://example.com/vocab#FeatureCollection",
+        "Feature": "http://example.com/vocab#Feature",
         },
       "type": "FeatureCollection",
       "features": [ 

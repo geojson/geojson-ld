@@ -3,7 +3,7 @@ geojson-ld
 
 GeoJSON in JSON-LD contexts
 
-# Making GeoJSON more self-descriptive
+## Making GeoJSON more self-descriptive
 
 JSON-LD is JSON for linking data and it's a web standard: http://json-ld.org/.
 

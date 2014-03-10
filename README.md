@@ -12,9 +12,11 @@ data, e.g, what "type" and "id" and the keys of "properties" mean to the rest
 of the web.  Additionally, JSON-LD's "@type" and "@id" provide a means of
 integrating GeoJSON with other schemas.
 
-Below is an example of using JSON-LD to declare that the features of a 
-collection are also schema.org Places and that their "description" property
-is the same thing as a schema.org decription.
+Below is an example of using JSON-LD to declare that the features of
+a collection are also schema.org Places and that their "description" property
+is the same thing as a schema.org decription. Bringing optional namespaces to
+the "properties" grab bag is perhaps the best thing that JSON-LD can do for
+GeoJSON data.
 
 ```
     { "@context": {

@@ -41,3 +41,6 @@ GeoJSON data.
 
 This is a work in progress. See https://github.com/geojson/geojson-ld/issues.
 
+A demo vocabulary including the GeoJSON terms above is online at
+http://geojson.org/vocab.
+

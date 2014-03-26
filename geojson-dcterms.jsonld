@@ -1,0 +1,21 @@
+{
+  "@context":
+  {
+    "Feature": "http://example.com/vocab#Feature",
+    "FeatureCollection": "http://example.com/vocab#FeatureCollection",
+    "GeometryCollection": "http://example.com/vocab#GeometryCollection",
+    "LineString": "http://example.com/vocab#LineString",
+    "MultiLineString": "http://example.com/vocab#MultiLineString",
+    "MultiPoint": "http://example.com/vocab#MultiPoint",
+    "MultiPolygon": "http://example.com/vocab#MultiPolygon",
+    "Point": "http://example.com/vocab#Point",
+    "Polygon": "http://example.com/vocab#Polygon",
+    "bbox": "http://example.com/vocab#bbox",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "features": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "properties": "http://example.com/vocab#properties",
+    "type": "http://example.com/vocab#type"
+  }
+}

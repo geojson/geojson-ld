@@ -10,12 +10,19 @@
     "MultiPolygon": "http://example.com/vocab#MultiPolygon",
     "Point": "http://example.com/vocab#Point",
     "Polygon": "http://example.com/vocab#Polygon",
-    "bbox": "http://example.com/vocab#bbox",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "features": "http://example.com/vocab#coordinates",
+    "bbox": {
+        "@id": "http://example.com/vocab#bbox", "@container": "@list" },
+    "coordinates": {
+        "@id": "http://example.com/vocab#coordinates", "@container": "@list" },
+    "features": {
+        "@id": "http://example.com/vocab#coordinates", 
+        "@container": "@set" },
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
     "properties": "http://example.com/vocab#properties",
-    "type": "http://example.com/vocab#type"
+    "type": "http://example.com/vocab#type",
+
+    "title": "http://purl.org/dc/terms/title",
+    "description": "http://purl.org/dc/terms/description"
   }
 }

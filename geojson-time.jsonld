@@ -25,7 +25,6 @@
       "@container": "@set",
       "@id": "http://example.com/vocab#coordinates"
     },
-    "when": "http://example.com/vocab#when",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
     "properties": "http://example.com/vocab#properties",
@@ -34,5 +33,6 @@
     "times": "http://example.com/vocab#times",
     "title": "http://purl.org/dc/terms/title",
     "type": "http://example.com/vocab#type"
+    "when": "http://example.com/vocab#when",
   }
 }

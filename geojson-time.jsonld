@@ -19,15 +19,18 @@
       "@container": "@list",
       "@id": "http://example.com/vocab#coordinates"
     },
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
     "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
       "@id": "http://example.com/vocab#coordinates"
     },
-    "duration": "http://example.com/vocab#duration",
+    "when": "http://example.com/vocab#when",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
     "properties": "http://example.com/vocab#properties",
+    "start": "http://www.w3.org/2006/time#hasBeginning",
+    "stop": "http://www.w3.org/2006/time#hasEnding",
     "times": "http://example.com/vocab#times",
     "title": "http://purl.org/dc/terms/title",
     "type": "http://example.com/vocab#type"

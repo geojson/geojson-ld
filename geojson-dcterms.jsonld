@@ -1,6 +1,5 @@
 {
-  "@context":
-  {
+  "@context": {
     "Feature": "http://example.com/vocab#Feature",
     "FeatureCollection": "http://example.com/vocab#FeatureCollection",
     "GeometryCollection": "http://example.com/vocab#GeometryCollection",
@@ -11,18 +10,22 @@
     "Point": "http://example.com/vocab#Point",
     "Polygon": "http://example.com/vocab#Polygon",
     "bbox": {
-        "@id": "http://example.com/vocab#bbox", "@container": "@list" },
+      "@container": "@list",
+      "@id": "http://example.com/vocab#bbox"
+    },
     "coordinates": {
-        "@id": "http://example.com/vocab#coordinates", "@container": "@list" },
+      "@container": "@list",
+      "@id": "http://example.com/vocab#coordinates"
+    },
+    "description": "http://purl.org/dc/terms/description",
     "features": {
-        "@id": "http://example.com/vocab#coordinates", 
-        "@container": "@set" },
+      "@container": "@set",
+      "@id": "http://example.com/vocab#coordinates"
+    },
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
     "properties": "http://example.com/vocab#properties",
-    "type": "http://example.com/vocab#type",
-
     "title": "http://purl.org/dc/terms/title",
-    "description": "http://purl.org/dc/terms/description"
+    "type": "http://example.com/vocab#type"
   }
 }

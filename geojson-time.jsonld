@@ -21,12 +21,14 @@
     },
     "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
     "description": "http://purl.org/dc/terms/description",
+    "earliestStop": "http://example.com/vocab#earliestStop",
     "features": {
       "@container": "@set",
       "@id": "http://example.com/vocab#coordinates"
     },
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
+    "latestStart": "http://example.com/vocab#latestStart",
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",

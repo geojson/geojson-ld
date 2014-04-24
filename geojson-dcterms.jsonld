@@ -13,10 +13,7 @@
       "@container": "@list",
       "@id": "http://example.com/vocab#bbox"
     },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "http://example.com/vocab#coordinates"
-    },
+    "coordinates": "http://example.com/vocab#coordinates",
     "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",

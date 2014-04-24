@@ -13,10 +13,7 @@
       "@container": "@list",
       "@id": "http://example.com/vocab#bbox"
     },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "http://example.com/vocab#coordinates"
-    },
+    "coordinates": "http://example.com/vocab#coordinates",
     "features": {
       "@container": "@set",
       "@id": "http://example.com/vocab#coordinates"

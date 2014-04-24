@@ -15,24 +15,20 @@
       "@container": "@list",
       "@id": "http://example.com/vocab#bbox"
     },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "http://example.com/vocab#coordinates"
-    },
+    "coordinates": "http://example.com/vocab#coordinates",
     "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
     "description": "http://purl.org/dc/terms/description",
-    "earliestStop": "http://example.com/vocab#earliestStop",
+    "earliest": "http://example.com/vocab#earliest",
     "features": {
       "@container": "@set",
       "@id": "http://example.com/vocab#coordinates"
     },
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "latestStart": "http://example.com/vocab#latestStart",
+    "latest": "http://example.com/vocab#latest",
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "times": "http://example.com/vocab#times",
     "title": "http://purl.org/dc/terms/title",
     "type": "http://example.com/vocab#type"
     "when": "http://example.com/vocab#when",

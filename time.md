@@ -24,17 +24,19 @@ For a thing that exists at a certain time.
 
 ```
 {
+  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
   "geometry": {
-    "type": "Point", 
+    "type": "Point",
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
     ]
-  }, 
+  },
   "when": {
-    "type": "Instant", 
+    "type": "Instant",
     "datetime": "2014-04-24"
-  }, 
+  },
+  "properties": {},
   "type": "Feature"
 }
 ```
@@ -45,18 +47,20 @@ For a thing that exists during a certain interval.
 
 ```
 {
+  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
   "geometry": {
-    "type": "Point", 
+    "type": "Point",
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
     ]
-  }, 
+  },
   "when": {
-    "stop": "2014-04-25", 
-    "start": "2014-04-24", 
+    "stop": "2014-04-25",
+    "start": "2014-04-24",
     "type": "Interval"
-  }, 
+  },
+  "properties": {},
   "type": "Feature"
 }
 ```
@@ -67,17 +71,19 @@ For a thing that exists *since* a certain time.
 
 ```
 {
+  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
   "geometry": {
-    "type": "Point", 
+    "type": "Point",
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
     ]
-  }, 
+  },
   "when": {
-    "start": "2014-04-24", 
+    "start": "2014-04-24",
     "type": "Interval"
-  }, 
+  },
+  "properties": {},
   "type": "Feature"
 }
 ```
@@ -89,19 +95,21 @@ things is a feature of Simile's Timeline.
 
 ```
 {
+  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
   "geometry": {
-    "type": "Point", 
+    "type": "Point",
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
     ]
-  }, 
+  },
   "when": {
-    "earliest": "2014-04-23", 
-    "type": "Instant", 
-    "latest": "2014-04-25", 
+    "earliest": "2014-04-23",
+    "type": "Instant",
+    "latest": "2014-04-25",
     "datetime": "2014-04-24"
-  }, 
+  },
+  "properties": {},
   "type": "Feature"
 }
 ```
@@ -112,18 +120,20 @@ For a thing that exists since an approximately known time.
 
 ```
 {
+  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
   "geometry": {
-    "type": "Point", 
+    "type": "Point",
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
     ]
-  }, 
+  },
   "when": {
-    "start": "2014-04-24", 
-    "earliest": "2014-04-23", 
+    "start": "2014-04-24",
+    "earliest": "2014-04-23",
     "type": "Interval"
-  }, 
+  },
+  "properties": {},
   "type": "Feature"
 }
 ```

@@ -23,7 +23,8 @@ For a thing that exists at a certain time.
     ]
   }, 
   "datetime": "2014-04-24",
-  "type": "Feature"
+  "type": "Feature",
+  "properties":{}
 }
 ```
 
@@ -42,7 +43,8 @@ For a thing that exists during a certain interval.
   }, 
   "stop": "2014-04-25", 
   "start": "2014-04-24", 
-  "type": "Feature"
+  "type": "Feature",
+  "properties":{}
 }
 ```
 
@@ -60,7 +62,8 @@ For a thing that exists *since* a certain time.
     ]
   }, 
   "start": "2014-04-24", 
-  "type": "Feature"
+  "type": "Feature",
+  "properties":{}
 }
 ```
 
@@ -80,8 +83,7 @@ things is a feature of Simile's Timeline.
   }, 
   "earliest": "2014-04-23", 
   "latest": "2014-04-25", 
-  "datetime": "2014-04-24",
-  "type": "Feature"
+  "datetime": "2014-04-24"
 }
 ```
 
@@ -100,7 +102,8 @@ For a thing that exists since an approximately known time.
   }, 
   "start": "2014-04-24", 
   "earliest": "2014-04-23", 
-  "type": "Feature"
+  "type": "Feature",
+  "properties":{}
 }
 ```
 

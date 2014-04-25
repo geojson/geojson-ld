@@ -18,26 +18,48 @@ https://github.com/geojson/geojson-ld/issues/9.
 - The keys of those items are "datetime", "start", "stop", "earliest",
   and "latest".
 
+## JSON-LD Playground
+
+Copy any of the JSON text below and paste at http://json-ld.org/playground/ to
+see it processed.
+
 ## Instantaneous event-like feature
 
 For a thing that exists at a certain time.
 
 ```
 {
-  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
+  "@context": {
+    "Feature": "http://example.com/vocab#Feature", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "Interval": "http://www.w3.org/2006/time#Interval", 
+    "Point": "http://example.com/vocab#Point", 
+    "coordinates": "http://example.com/vocab#coordinates", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "earliest": "http://example.com/vocab#earliest", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "id": "http://example.com/vocab#id", 
+    "latest": "http://example.com/vocab#latest", 
+    "properties": "http://example.com/vocab#properties", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "type": "http://example.com/vocab#type", 
+    "when": "http://example.com/vocab#when"
+  }, 
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      0.0,
+      0.0, 
       0.0
-    ]
-  },
+    ], 
+    "type": "Point"
+  }, 
+  "id": "1", 
+  "properties": {}, 
+  "type": "Feature", 
   "when": {
-    "type": "Instant",
-    "datetime": "2014-04-24"
-  },
-  "properties": {},
-  "type": "Feature"
+    "datetime": "2014-04-24", 
+    "type": "Instant"
+  }
 }
 ```
 
@@ -47,21 +69,38 @@ For a thing that exists during a certain interval.
 
 ```
 {
-  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
+  "@context": {
+    "Feature": "http://example.com/vocab#Feature", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "Interval": "http://www.w3.org/2006/time#Interval", 
+    "Point": "http://example.com/vocab#Point", 
+    "coordinates": "http://example.com/vocab#coordinates", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "earliest": "http://example.com/vocab#earliest", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "id": "http://example.com/vocab#id", 
+    "latest": "http://example.com/vocab#latest", 
+    "properties": "http://example.com/vocab#properties", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "type": "http://example.com/vocab#type", 
+    "when": "http://example.com/vocab#when"
+  }, 
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      0.0,
+      0.0, 
       0.0
-    ]
-  },
+    ], 
+    "type": "Point"
+  }, 
+  "id": "1", 
+  "properties": {}, 
+  "type": "Feature", 
   "when": {
-    "stop": "2014-04-25",
-    "start": "2014-04-24",
+    "start": "2014-04-24", 
+    "stop": "2014-04-25", 
     "type": "Interval"
-  },
-  "properties": {},
-  "type": "Feature"
+  }
 }
 ```
 
@@ -71,20 +110,37 @@ For a thing that exists *since* a certain time.
 
 ```
 {
-  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
+  "@context": {
+    "Feature": "http://example.com/vocab#Feature", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "Interval": "http://www.w3.org/2006/time#Interval", 
+    "Point": "http://example.com/vocab#Point", 
+    "coordinates": "http://example.com/vocab#coordinates", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "earliest": "http://example.com/vocab#earliest", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "id": "http://example.com/vocab#id", 
+    "latest": "http://example.com/vocab#latest", 
+    "properties": "http://example.com/vocab#properties", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "type": "http://example.com/vocab#type", 
+    "when": "http://example.com/vocab#when"
+  }, 
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      0.0,
+      0.0, 
       0.0
-    ]
-  },
+    ], 
+    "type": "Point"
+  }, 
+  "id": "1", 
+  "properties": {}, 
+  "type": "Feature", 
   "when": {
-    "start": "2014-04-24",
+    "start": "2014-04-24", 
     "type": "Interval"
-  },
-  "properties": {},
-  "type": "Feature"
+  }
 }
 ```
 
@@ -95,22 +151,39 @@ things is a feature of Simile's Timeline.
 
 ```
 {
-  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
+  "@context": {
+    "Feature": "http://example.com/vocab#Feature", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "Interval": "http://www.w3.org/2006/time#Interval", 
+    "Point": "http://example.com/vocab#Point", 
+    "coordinates": "http://example.com/vocab#coordinates", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "earliest": "http://example.com/vocab#earliest", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "id": "http://example.com/vocab#id", 
+    "latest": "http://example.com/vocab#latest", 
+    "properties": "http://example.com/vocab#properties", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "type": "http://example.com/vocab#type", 
+    "when": "http://example.com/vocab#when"
+  }, 
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      0.0,
+      0.0, 
       0.0
-    ]
-  },
+    ], 
+    "type": "Point"
+  }, 
+  "id": "1", 
+  "properties": {}, 
+  "type": "Feature", 
   "when": {
-    "earliest": "2014-04-23",
-    "type": "Instant",
-    "latest": "2014-04-25",
-    "datetime": "2014-04-24"
-  },
-  "properties": {},
-  "type": "Feature"
+    "datetime": "2014-04-24", 
+    "earliest": "2014-04-23", 
+    "latest": "2014-04-25", 
+    "type": "Instant"
+  }
 }
 ```
 
@@ -120,21 +193,38 @@ For a thing that exists since an approximately known time.
 
 ```
 {
-  "@context": "http://geojson.org/contexts/geojson-time.jsonld",
+  "@context": {
+    "Feature": "http://example.com/vocab#Feature", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "Interval": "http://www.w3.org/2006/time#Interval", 
+    "Point": "http://example.com/vocab#Point", 
+    "coordinates": "http://example.com/vocab#coordinates", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "earliest": "http://example.com/vocab#earliest", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "id": "http://example.com/vocab#id", 
+    "latest": "http://example.com/vocab#latest", 
+    "properties": "http://example.com/vocab#properties", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "type": "http://example.com/vocab#type", 
+    "when": "http://example.com/vocab#when"
+  }, 
   "geometry": {
-    "type": "Point",
     "coordinates": [
-      0.0,
+      0.0, 
       0.0
-    ]
-  },
+    ], 
+    "type": "Point"
+  }, 
+  "id": "1", 
+  "properties": {}, 
+  "type": "Feature", 
   "when": {
-    "start": "2014-04-24",
-    "earliest": "2014-04-23",
+    "earliest": "2014-04-23", 
+    "start": "2014-04-24", 
     "type": "Interval"
-  },
-  "properties": {},
-  "type": "Feature"
+  }
 }
 ```
 

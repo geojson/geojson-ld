@@ -30,7 +30,7 @@
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
     "title": "http://purl.org/dc/terms/title",
-    "type": "http://example.com/vocab#type"
-    "when": "http://example.com/vocab#when",
+    "type": "http://example.com/vocab#type",
+    "when": "http://example.com/vocab#when"
   }
 }

@@ -4,7 +4,7 @@
     "FeatureCollection": "http://example.com/vocab#FeatureCollection",
     "GeometryCollection": "http://example.com/vocab#GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
-    "Interval": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
     "LineString": "http://example.com/vocab#LineString",
     "MultiLineString": "http://example.com/vocab#MultiLineString",
     "MultiPoint": "http://example.com/vocab#MultiPoint",

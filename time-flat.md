@@ -28,10 +28,19 @@ For a thing that exists at a certain time.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": "http://www.w3.org/2006/time#inXSDDateTime",
+    "instant": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "properties": "http://example.com/vocab#properties",
-    "start": "http://www.w3.org/2006/time#hasBeginning",
-    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Instant"],
@@ -62,10 +71,19 @@ For a thing that exists during a certain interval.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": "http://www.w3.org/2006/time#inXSDDateTime",
+    "instant": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "properties": "http://example.com/vocab#properties",
-    "start": "http://www.w3.org/2006/time#hasBeginning",
-    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Interval"],
@@ -97,10 +115,19 @@ For a thing that exists *since* a certain time.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": "http://www.w3.org/2006/time#inXSDDateTime",
+    "instant": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "properties": "http://example.com/vocab#properties",
-    "start": "http://www.w3.org/2006/time#hasBeginning",
-    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Interval"],

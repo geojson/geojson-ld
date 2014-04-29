@@ -2,8 +2,8 @@
 
 As in the examples of [time.md](time.md) but flatter. Items of the "when"
 object go up to the feature object and the "types" are eliminated: instead the
-presence of a "instant" signals to non-LD JSON processors that we are talking
-about an instant and presence of "start" and/or "stop" signals that we are
+presence of a "datetime" signals to non-LD JSON processors that we are talking
+about an datetime and presence of "start" and/or "stop" signals that we are
 talking about an interval.  Duck-typing, if you will. For JSON-LD processors,
 the type of thing can be made more explicit by specifying its "@type" (see
 http://www.w3.org/TR/json-ld/#specifying-the-type).
@@ -28,7 +28,7 @@ For a thing that exists at a certain time.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": {
+    "datetime": {
       "@id": "http://www.w3.org/2006/time#inXSDDateTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
@@ -51,7 +51,7 @@ For a thing that exists at a certain time.
       0.0
     ]
   },
-  "instant": "2014-04-24",
+  "datetime": "2014-04-24",
   "type": "Feature",
   "properties": {}
 }
@@ -71,7 +71,7 @@ For a thing that exists during a certain interval.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": {
+    "datetime": {
       "@id": "http://www.w3.org/2006/time#inXSDDateTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
@@ -115,7 +115,7 @@ For a thing that exists *since* a certain time.
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
-    "instant": {
+    "datetime": {
       "@id": "http://www.w3.org/2006/time#inXSDDateTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },

@@ -17,7 +17,7 @@ For a thing that exists at a certain time.
 
 ```
 {
-:  "@context": {
+   "@context": {
     "Feature": "http://example.com/vocab#Feature",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",

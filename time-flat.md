@@ -11,6 +11,9 @@ http://www.w3.org/TR/json-ld/#specifying-the-type).
 The examples below are for the proposal made by @sgillies in
 https://github.com/geojson/geojson-ld/issues/13.
 
+Copy any of the JSON text blocks to http://json-ld.org/playground/ to see how
+it parses.
+
 ## Instantaneous event-like feature
 
 For a thing that exists at a certain time.
@@ -29,7 +32,7 @@ For a thing that exists at a certain time.
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "type": "http://example.com/vocab#type",
+    "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Instant"],
   "geometry": {
@@ -63,7 +66,7 @@ For a thing that exists during a certain interval.
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "type": "http://example.com/vocab#type",
+    "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Interval"],
   "geometry": {
@@ -98,7 +101,7 @@ For a thing that exists *since* a certain time.
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "type": "http://example.com/vocab#type",
+    "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Interval"],
   "geometry": {

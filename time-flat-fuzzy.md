@@ -4,6 +4,9 @@ A measure of uncertainty useful to historical applications can be provided
 by two extra items: "earliest" and "latest". These items are not intended
 to describe numerical precision.
 
+Copy any of the JSON text blocks to http://json-ld.org/playground/ to see how
+it parses.
+:w
 ## Fuzzy instant
 
 For a thing that exists at a certain time with fuzzy bounds. Displaying such
@@ -25,7 +28,7 @@ things is a feature of Simile's Timeline.
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "type": "http://example.com/vocab#type",
+    "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Instant"],
   "geometry": {
@@ -63,7 +66,7 @@ For a thing that exists since an approximately known time.
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
-    "type": "http://example.com/vocab#type",
+    "type": "http://example.com/vocab#type"
   },
   "@type": ["Feature", "Interval"],
   "geometry": {

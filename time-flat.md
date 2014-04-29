@@ -9,7 +9,7 @@ the type of thing can be made more explicit by specifying its "@type" (see
 http://www.w3.org/TR/json-ld/#specifying-the-type).
 
 The examples below are for the proposal made by @sgillies in
-https://github.com/geojson/geojson-ld/issues/10.
+https://github.com/geojson/geojson-ld/issues/13.
 
 ## Instantaneous event-like feature
 

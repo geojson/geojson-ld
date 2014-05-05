@@ -13,7 +13,7 @@ https://github.com/geojson/geojson-ld/issues/9.
 ## Proposal in a nutshell
 
 - A "when" object analogous to GeoJSON's existing "geometry".
-- Two "types" of temporality: "Instant" and "Interval".
+- Two "@types" of temporality: "Instant" and "Interval".
 - The values of items in "when" are ISO-8601 or RFC 3339 date/time strings.
 - The keys of those items are "datetime", "start", "stop", "earliest",
   and "latest".
@@ -63,9 +63,10 @@ For a thing that exists at a certain time.
   "id": "1",
   "properties": {},
   "type": "Feature",
+  "@type": "Feature",
   "when": {
     "datetime": "2014-04-24",
-    "type": "Instant"
+    "@type": "Instant"
   }
 }
 ```
@@ -110,10 +111,11 @@ For a thing that exists during a certain interval.
   "id": "1",
   "properties": {},
   "type": "Feature",
+  "@type": "Feature",
   "when": {
     "start": "2014-04-24",
     "stop": "2014-04-25",
-    "type": "Interval"
+    "@type": "Interval"
   }
 }
 ```
@@ -158,9 +160,10 @@ For a thing that exists *since* a certain time.
   "id": "1",
   "properties": {},
   "type": "Feature",
+  "@type": "Feature",
   "when": {
     "start": "2014-04-24",
-    "type": "Interval"
+    "@type": "Interval"
   }
 }
 ```
@@ -206,11 +209,12 @@ things is a feature of Simile's Timeline.
   "id": "1",
   "properties": {},
   "type": "Feature",
+  "@type": "Feature",
   "when": {
     "datetime": "2014-04-24",
     "earliest": "2014-04-23",
     "latest": "2014-04-25",
-    "type": "Instant"
+    "@type": "Instant"
   }
 }
 ```
@@ -255,10 +259,11 @@ For a thing that exists since an approximately known time.
   "id": "1",
   "properties": {},
   "type": "Feature",
+  "@type": "Feature",
   "when": {
     "earliest": "2014-04-23",
     "start": "2014-04-24",
-    "type": "Interval"
+    "@type": "Interval"
   }
 }
 ```

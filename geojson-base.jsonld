@@ -16,7 +16,7 @@
     "coordinates": "http://example.com/vocab#coordinates",
     "features": {
       "@container": "@set",
-      "@id": "http://example.com/vocab#coordinates"
+      "@id": "http://example.com/vocab#features"
     },
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",

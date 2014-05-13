@@ -1,22 +1,20 @@
-# Temporal JSON-LD in GeoJSON
-
-The concept of temporal extent is developed in parallel to the existing concept
-of spatial extent. The temporal items can therefore be safely ignored by
-GeoJSON processors.
+# Event-like GeoJSON Features Using JSON-LD
 
 With the addition of temporal items, GeoJSON features can become event-like and
 such features will be used in the following examples.
 
-The examples below are for the proposal made by @sgillies in
-https://github.com/geojson/geojson-ld/issues/9.
+The concept of temporal extent is developed in parallel to the existing concept
+of spatial extent. The temporal items can therefore be safely ignored by
+GeoJSON processors.
 
 ## Proposal in a nutshell
 
 - A "when" object analogous to GeoJSON's existing "geometry".
 - Two "@types" of temporality: "Instant" and "Interval".
 - The values of items in "when" are ISO-8601 or RFC 3339 date/time strings.
-- The keys of those items are "datetime", "start", "stop", "earliest",
-  and "latest".
+- The keys of those items are "datetime", "start", "stop".
+- The keys "earliest" and "latest" are being considered as a way to communicate
+  fuzziness or imprecision.
 
 ## JSON-LD Playground
 

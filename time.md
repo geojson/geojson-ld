@@ -16,6 +16,9 @@ GeoJSON processors.
 - The keys "earliest" and "latest" are being considered as a way to communicate
   fuzziness or imprecision.
 
+Please note that *example.com/vocab* is used as a placeholder for a namespace
+yet to be published.
+
 ## JSON-LD Playground
 
 Copy any of the JSON text below and paste at http://json-ld.org/playground/ to

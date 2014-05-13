@@ -13,7 +13,7 @@ https://github.com/geojson/geojson-ld/issues/9.
 ## Proposal in a nutshell
 
 - A "when" object analogous to GeoJSON's existing "geometry".
-- Two "types" of temporality: "Instant" and "Interval".
+- Two "@types" of temporality: "Instant" and "Interval".
 - The values of items in "when" are ISO-8601 or RFC 3339 date/time strings.
 - The keys of those items are "datetime", "start", "stop", "earliest",
   and "latest".
@@ -30,35 +30,43 @@ For a thing that exists at a certain time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature", 
-    "Instant": "http://www.w3.org/2006/time#Instant", 
-    "Interval": "http://www.w3.org/2006/time#Interval", 
-    "Point": "http://example.com/vocab#Point", 
-    "coordinates": "http://example.com/vocab#coordinates", 
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-    "earliest": "http://example.com/vocab#earliest", 
-    "geometry": "http://example.com/vocab#geometry", 
-    "id": "http://example.com/vocab#id", 
-    "latest": "http://example.com/vocab#latest", 
-    "properties": "http://example.com/vocab#properties", 
-    "start": "http://www.w3.org/2006/time#hasBeginning", 
-    "stop": "http://www.w3.org/2006/time#hasEnding", 
-    "type": "http://example.com/vocab#type", 
+    "Feature": "http://example.com/vocab#Feature",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Point": "http://example.com/vocab#Point",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "datetime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "properties": "http://example.com/vocab#properties",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "type": "http://example.com/vocab#type",
     "when": "http://example.com/vocab#when"
-  }, 
+  },
   "geometry": {
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
-    ], 
+    ],
     "type": "Point"
-  }, 
-  "id": "1", 
-  "properties": {}, 
-  "type": "Feature", 
+  },
+  "id": "1",
+  "properties": {},
+  "type": "Feature",
+  "@type": "Feature",
   "when": {
-    "datetime": "2014-04-24", 
-    "type": "Instant"
+    "datetime": "2014-04-24",
+    "@type": "Instant"
   }
 }
 ```
@@ -70,36 +78,44 @@ For a thing that exists during a certain interval.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature", 
-    "Instant": "http://www.w3.org/2006/time#Instant", 
-    "Interval": "http://www.w3.org/2006/time#Interval", 
-    "Point": "http://example.com/vocab#Point", 
-    "coordinates": "http://example.com/vocab#coordinates", 
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-    "earliest": "http://example.com/vocab#earliest", 
-    "geometry": "http://example.com/vocab#geometry", 
-    "id": "http://example.com/vocab#id", 
-    "latest": "http://example.com/vocab#latest", 
-    "properties": "http://example.com/vocab#properties", 
-    "start": "http://www.w3.org/2006/time#hasBeginning", 
-    "stop": "http://www.w3.org/2006/time#hasEnding", 
-    "type": "http://example.com/vocab#type", 
+    "Feature": "http://example.com/vocab#Feature",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Point": "http://example.com/vocab#Point",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "datetime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "properties": "http://example.com/vocab#properties",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "type": "http://example.com/vocab#type",
     "when": "http://example.com/vocab#when"
-  }, 
+  },
   "geometry": {
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
-    ], 
+    ],
     "type": "Point"
-  }, 
-  "id": "1", 
-  "properties": {}, 
-  "type": "Feature", 
+  },
+  "id": "1",
+  "properties": {},
+  "type": "Feature",
+  "@type": "Feature",
   "when": {
-    "start": "2014-04-24", 
-    "stop": "2014-04-25", 
-    "type": "Interval"
+    "start": "2014-04-24",
+    "stop": "2014-04-25",
+    "@type": "Interval"
   }
 }
 ```
@@ -111,35 +127,43 @@ For a thing that exists *since* a certain time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature", 
-    "Instant": "http://www.w3.org/2006/time#Instant", 
-    "Interval": "http://www.w3.org/2006/time#Interval", 
-    "Point": "http://example.com/vocab#Point", 
-    "coordinates": "http://example.com/vocab#coordinates", 
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-    "earliest": "http://example.com/vocab#earliest", 
-    "geometry": "http://example.com/vocab#geometry", 
-    "id": "http://example.com/vocab#id", 
-    "latest": "http://example.com/vocab#latest", 
-    "properties": "http://example.com/vocab#properties", 
-    "start": "http://www.w3.org/2006/time#hasBeginning", 
-    "stop": "http://www.w3.org/2006/time#hasEnding", 
-    "type": "http://example.com/vocab#type", 
+    "Feature": "http://example.com/vocab#Feature",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Point": "http://example.com/vocab#Point",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "datetime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "properties": "http://example.com/vocab#properties",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "type": "http://example.com/vocab#type",
     "when": "http://example.com/vocab#when"
-  }, 
+  },
   "geometry": {
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
-    ], 
+    ],
     "type": "Point"
-  }, 
-  "id": "1", 
-  "properties": {}, 
-  "type": "Feature", 
+  },
+  "id": "1",
+  "properties": {},
+  "type": "Feature",
+  "@type": "Feature",
   "when": {
-    "start": "2014-04-24", 
-    "type": "Interval"
+    "start": "2014-04-24",
+    "@type": "Interval"
   }
 }
 ```
@@ -152,37 +176,45 @@ things is a feature of Simile's Timeline.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature", 
-    "Instant": "http://www.w3.org/2006/time#Instant", 
-    "Interval": "http://www.w3.org/2006/time#Interval", 
-    "Point": "http://example.com/vocab#Point", 
-    "coordinates": "http://example.com/vocab#coordinates", 
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-    "earliest": "http://example.com/vocab#earliest", 
-    "geometry": "http://example.com/vocab#geometry", 
-    "id": "http://example.com/vocab#id", 
-    "latest": "http://example.com/vocab#latest", 
-    "properties": "http://example.com/vocab#properties", 
-    "start": "http://www.w3.org/2006/time#hasBeginning", 
-    "stop": "http://www.w3.org/2006/time#hasEnding", 
-    "type": "http://example.com/vocab#type", 
+    "Feature": "http://example.com/vocab#Feature",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Point": "http://example.com/vocab#Point",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "datetime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "properties": "http://example.com/vocab#properties",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "type": "http://example.com/vocab#type",
     "when": "http://example.com/vocab#when"
-  }, 
+  },
   "geometry": {
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
-    ], 
+    ],
     "type": "Point"
-  }, 
-  "id": "1", 
-  "properties": {}, 
-  "type": "Feature", 
+  },
+  "id": "1",
+  "properties": {},
+  "type": "Feature",
+  "@type": "Feature",
   "when": {
-    "datetime": "2014-04-24", 
-    "earliest": "2014-04-23", 
-    "latest": "2014-04-25", 
-    "type": "Instant"
+    "datetime": "2014-04-24",
+    "earliest": "2014-04-23",
+    "latest": "2014-04-25",
+    "@type": "Instant"
   }
 }
 ```
@@ -194,36 +226,44 @@ For a thing that exists since an approximately known time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature", 
-    "Instant": "http://www.w3.org/2006/time#Instant", 
-    "Interval": "http://www.w3.org/2006/time#Interval", 
-    "Point": "http://example.com/vocab#Point", 
-    "coordinates": "http://example.com/vocab#coordinates", 
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-    "earliest": "http://example.com/vocab#earliest", 
-    "geometry": "http://example.com/vocab#geometry", 
-    "id": "http://example.com/vocab#id", 
-    "latest": "http://example.com/vocab#latest", 
-    "properties": "http://example.com/vocab#properties", 
-    "start": "http://www.w3.org/2006/time#hasBeginning", 
-    "stop": "http://www.w3.org/2006/time#hasEnding", 
-    "type": "http://example.com/vocab#type", 
+    "Feature": "http://example.com/vocab#Feature",
+    "Instant": "http://www.w3.org/2006/time#Instant",
+    "Interval": "http://www.w3.org/2006/time#Interval",
+    "Point": "http://example.com/vocab#Point",
+    "coordinates": "http://example.com/vocab#coordinates",
+    "geometry": "http://example.com/vocab#geometry",
+    "id": "http://example.com/vocab#id",
+    "datetime": {
+      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "properties": "http://example.com/vocab#properties",
+    "start": {
+      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "type": "http://example.com/vocab#type",
     "when": "http://example.com/vocab#when"
-  }, 
+  },
   "geometry": {
     "coordinates": [
-      0.0, 
+      0.0,
       0.0
-    ], 
+    ],
     "type": "Point"
-  }, 
-  "id": "1", 
-  "properties": {}, 
-  "type": "Feature", 
+  },
+  "id": "1",
+  "properties": {},
+  "type": "Feature",
+  "@type": "Feature",
   "when": {
-    "earliest": "2014-04-23", 
-    "start": "2014-04-24", 
-    "type": "Interval"
+    "earliest": "2014-04-23",
+    "start": "2014-04-24",
+    "@type": "Interval"
   }
 }
 ```

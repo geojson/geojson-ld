@@ -15,6 +15,7 @@
       "@container": "@list",
       "@id": "http://example.com/vocab#bbox"
     },
+    "circa": "http://example.com/vocab#circa",
     "coordinates": "http://example.com/vocab#coordinates",
     "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
     "description": "http://purl.org/dc/terms/description",

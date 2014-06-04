@@ -14,6 +14,8 @@
       "@id": "http://example.com/vocab#bbox"
     },
     "coordinates": "http://example.com/vocab#coordinates",
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
+    "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
       "@id": "http://example.com/vocab#features"
@@ -21,6 +23,11 @@
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
     "properties": "http://example.com/vocab#properties",
-    "type": "http://example.com/vocab#type"
+    "start": "http://www.w3.org/2006/time#hasBeginning",
+    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "title": "http://purl.org/dc/terms/title",
+    "type": "http://example.com/vocab#type",
+    "when": "http://example.com/vocab#when"
   }
 }
+

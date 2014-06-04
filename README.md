@@ -1,9 +1,7 @@
 geojson-ld
 ==========
 
-JSON-LD contexts for GeoJSON data
-
-## Making GeoJSON more self-descriptive
+*Describing and extending GeoJSON with JSON-LD*
 
 JSON-LD is JSON for linking data and it's a web standard: http://json-ld.org/.
 It offers a smooth path for upgrading existing GeoJSON data.
@@ -12,6 +10,12 @@ A JSON-LD context defines terms and other things and allows GeoJSON documents
 to be more specific about data, e.g, what "type" and "id" and the keys of
 "properties" mean to the rest of the web.  Additionally, JSON-LD's "@type" and
 "@id" provide a means of integrating GeoJSON with other schemas.
+
+This GeoJSON-LD project is focussed on publishing a vocabulary of GeoJSON terms
+and a base JSON-LD context for GeoJSON data, but also aims to help
+organizations develop good practices for upgrading GeoJSON data.
+
+## Example
 
 Below is an example of using JSON-LD to declare that the features of
 a collection are also schema.org Places and that their "description" property
@@ -39,10 +43,6 @@ GeoJSON data.
           } ]
       }
 ```
-
-This GeoJSON-LD project is focussed on publishing a vocabulary of GeoJSON terms
-and a base JSON-LD context for GeoJSON data, but also aims to help
-organizations develop good practices for upgrading GeoJSON data.
 
 ## Development
 

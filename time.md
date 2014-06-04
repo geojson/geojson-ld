@@ -181,6 +181,7 @@ things is a feature of Simile's Timeline.
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
     "Point": "http://example.com/vocab#Point",
+    "circa": "http://example.com/vocab#circa",
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
@@ -211,10 +212,13 @@ things is a feature of Simile's Timeline.
   "properties": {},
   "type": "Feature",
   "@type": "Feature",
+  "circa": {
+    "start": "2014-04-23",
+    "stop": "2014-04-25",
+    "@type": "Interval"
+  },
   "when": {
     "datetime": "2014-04-24",
-    "earliest": "2014-04-23",
-    "latest": "2014-04-25",
     "@type": "Instant"
   }
 }
@@ -231,6 +235,7 @@ For a thing that exists since an approximately known time.
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
     "Point": "http://example.com/vocab#Point",
+    "circa": "http://example.com/vocab#circa",
     "coordinates": "http://example.com/vocab#coordinates",
     "geometry": "http://example.com/vocab#geometry",
     "id": "http://example.com/vocab#id",
@@ -261,8 +266,11 @@ For a thing that exists since an approximately known time.
   "properties": {},
   "type": "Feature",
   "@type": "Feature",
+  "circa": {
+    "start": "2014-04-23",
+    "@type": "Interval"
+  },
   "when": {
-    "earliest": "2014-04-23",
     "start": "2014-04-24",
     "@type": "Interval"
   }

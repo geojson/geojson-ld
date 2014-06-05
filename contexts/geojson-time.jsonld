@@ -24,12 +24,12 @@
       "@id": "http://example.com/vocab#features"
     },
     "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "id": "@id',
     "properties": "http://example.com/vocab#properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",
     "title": "http://purl.org/dc/terms/title",
-    "type": "http://example.com/vocab#type",
+    "type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#type",
     "when": "http://example.com/vocab#when"
   }
 }

@@ -9,7 +9,7 @@
       copy: src=apache/geojson-ld.conf dest=/etc/apache2/sites-available/geojson-ld.conf
 
     - name: Upload static site
-      copy: src=_build/html dest=/var/www owner=www-data group=www-data mode=644
+      copy: src=docs/_build/html dest=/var/www owner=www-data group=www-data mode=644
 
     - name: Upload contexts
       copy: src=contexts dest=/var/www/html owner=www-data group=www-data mode=644

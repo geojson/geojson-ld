@@ -1,40 +1,41 @@
 {
   "@context": {
     "@context": {
-      "Polygon": "http://example.com/vocab#Polygon", 
-      "Feature": "http://example.com/vocab#Feature", 
+      "geojson": "http://ld.geojson.org/vocab#",
+      "Polygon": "geojson:Polygon", 
+      "Feature": "geojson:Feature", 
       "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-      "MultiLineString": "http://example.com/vocab#MultiLineString", 
-      "id": "http://example.com/vocab#id", 
+      "MultiLineString": "geojson:MultiLineString", 
+      "id": "geojson:id", 
       "features": {
-        "@id": "http://example.com/vocab#coordinates", 
+        "@id": "geojson:coordinates", 
         "@container": "@set"
       }, 
       "title": "http://purl.org/dc/terms/title", 
-      "when": "http://example.com/vocab#when", 
+      "when": "geojson:when", 
       "coordinates": {
-        "@id": "http://example.com/vocab#coordinates"
+        "@id": "geojson:coordinates"
       }, 
-      "earliestStop": "http://example.com/vocab#earliestStop", 
+      "earliestStop": "geojson:earliestStop", 
       "start": "http://www.w3.org/2006/time#hasBeginning", 
-      "latestStart": "http://example.com/vocab#latestStart", 
-      "MultiPolygon": "http://example.com/vocab#MultiPolygon", 
-      "type": "http://example.com/vocab#type", 
+      "latestStart": "geojson:latestStart", 
+      "MultiPolygon": "geojson:MultiPolygon", 
+      "type": "@type", 
       "Instant": "http://www.w3.org/2006/time#Instant", 
       "description": "http://purl.org/dc/terms/description", 
       "Interval": "http://www.w3.org/2006/time#Instant", 
       "stop": "http://www.w3.org/2006/time#hasEnding", 
       "bbox": {
-        "@id": "http://example.com/vocab#bbox", 
+        "@id": "geojson:bbox", 
         "@container": "@list"
       }, 
-      "properties": "http://example.com/vocab#properties", 
-      "MultiPoint": "http://example.com/vocab#MultiPoint", 
-      "Point": "http://example.com/vocab#Point", 
-      "geometry": "http://example.com/vocab#geometry", 
-      "FeatureCollection": "http://example.com/vocab#FeatureCollection", 
-      "GeometryCollection": "http://example.com/vocab#GeometryCollection", 
-      "LineString": "http://example.com/vocab#LineString"
+      "properties": "geojson:properties", 
+      "MultiPoint": "geojson:MultiPoint", 
+      "Point": "geojson:Point", 
+      "geometry": "geojson:geometry", 
+      "FeatureCollection": "geojson:FeatureCollection", 
+      "GeometryCollection": "geojson:GeometryCollection", 
+      "LineString": "geojson:LineString"
     }
   }, 
   "type": "FeatureCollection", 

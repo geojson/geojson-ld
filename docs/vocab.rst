@@ -22,7 +22,7 @@ Description: See `GeoJSON Section 2.3 <http://geojson.org/geojson-spec.html#feat
 Feature
 -------
 
-*http://example.com/vocab#Feature*
+*http://ld.geojson.org/vocab#Feature*
 
 Description: See `GeoJSON Section 2.2 <http://geojson.org/geojson-spec.html#feature-objects>`__.
 
@@ -32,7 +32,7 @@ Core Properties
 type
 ----
 
-*http://example.com/vocab#type*
+*http://ld.geojson.org/vocab##type*
 
 Description: See `GeoJSON Section 2 <http://geojson.org/geojson-spec.html#geojson-objects>`__.
 

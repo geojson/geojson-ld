@@ -25,7 +25,7 @@
       "@id": "geojson:features"
     },
     "geometry": "geojson:geometry",
-    "id": "@id',
+    "id": "@id",
     "properties": "geojson:properties",
     "start": "http://www.w3.org/2006/time#hasBeginning",
     "stop": "http://www.w3.org/2006/time#hasEnding",

@@ -3,7 +3,8 @@ geojson-ld
 
 *Describing and extending GeoJSON with JSON-LD*
 
-JSON-LD is JSON for linking data and it's a web standard: http://json-ld.org/.
+JSON-LD is JSON for linking data and it's a web standard:
+http://www.w3.org/TR/json-ld/.
 It offers a smooth path for upgrading existing GeoJSON data.
 
 A JSON-LD context defines terms and other things and allows GeoJSON documents

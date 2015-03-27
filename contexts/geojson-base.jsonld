@@ -15,7 +15,6 @@
       "@id": "geojson:bbox"
     },
     "coordinates": "geojson:coordinates",
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
     "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
@@ -24,10 +23,7 @@
     "geometry": "geojson:geometry",
     "id": "@id",
     "properties": "geojson:properties",
-    "start": "http://www.w3.org/2006/time#hasBeginning",
-    "stop": "http://www.w3.org/2006/time#hasEnding",
     "title": "http://purl.org/dc/terms/title",
     "type": "@type",
-    "when": "geojson:when"
   }
 }

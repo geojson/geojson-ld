@@ -18,7 +18,10 @@
     },
     "circa": "geojson:circa",
     "coordinates": "geojson:coordinates",
-    "datetime": "http://www.w3.org/2006/time#inXSDDateTime",
+    "datetime": {
+      "@id": "geojson:datetime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
@@ -27,8 +30,14 @@
     "geometry": "geojson:geometry",
     "id": "@id",
     "properties": "geojson:properties",
-    "start": "http://www.w3.org/2006/time#hasBeginning",
-    "stop": "http://www.w3.org/2006/time#hasEnding",
+    "start": {
+      "@id": "geojson:start",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "stop": {
+      "@id": "geojson:stop",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "title": "http://purl.org/dc/terms/title",
     "type": "@type",
     "when": "geojson:when"

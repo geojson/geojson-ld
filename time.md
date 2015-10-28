@@ -31,28 +31,47 @@ For a thing that exists at a certain time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature",
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
-    "Point": "http://example.com/vocab#Point",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
     "datetime": {
-      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@id": "geojson:datetime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "properties": "http://example.com/vocab#properties",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
     "start": {
-      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@id": "geojson:start",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "stop": {
-      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@id": "geojson:stop",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "type": "http://example.com/vocab#type",
-    "when": "http://example.com/vocab#when"
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when"
   },
   "geometry": {
     "coordinates": [
@@ -79,28 +98,47 @@ For a thing that exists during a certain interval.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature",
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
-    "Point": "http://example.com/vocab#Point",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
     "datetime": {
-      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@id": "geojson:datetime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "properties": "http://example.com/vocab#properties",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
     "start": {
-      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@id": "geojson:start",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "stop": {
-      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@id": "geojson:stop",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "type": "http://example.com/vocab#type",
-    "when": "http://example.com/vocab#when"
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when"
   },
   "geometry": {
     "coordinates": [
@@ -128,28 +166,47 @@ For a thing that exists *since* a certain time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature",
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
-    "Point": "http://example.com/vocab#Point",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
     "datetime": {
-      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@id": "geojson:datetime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "properties": "http://example.com/vocab#properties",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
     "start": {
-      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@id": "geojson:start",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "stop": {
-      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@id": "geojson:stop",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "type": "http://example.com/vocab#type",
-    "when": "http://example.com/vocab#when"
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when"
   },
   "geometry": {
     "coordinates": [
@@ -177,29 +234,47 @@ things is a feature of Simile's Timeline.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature",
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
-    "Point": "http://example.com/vocab#Point",
-    "circa": "http://example.com/vocab#circa",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
     "datetime": {
-      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@id": "geojson:datetime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "properties": "http://example.com/vocab#properties",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
     "start": {
-      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@id": "geojson:start",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "stop": {
-      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@id": "geojson:stop",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "type": "http://example.com/vocab#type",
-    "when": "http://example.com/vocab#when"
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when"
   },
   "geometry": {
     "coordinates": [
@@ -231,29 +306,47 @@ For a thing that exists since an approximately known time.
 ```
 {
   "@context": {
-    "Feature": "http://example.com/vocab#Feature",
+    "geojson": "http://ld.geojson.org/vocab#",
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
     "Instant": "http://www.w3.org/2006/time#Instant",
     "Interval": "http://www.w3.org/2006/time#Interval",
-    "Point": "http://example.com/vocab#Point",
-    "circa": "http://example.com/vocab#circa",
-    "coordinates": "http://example.com/vocab#coordinates",
-    "geometry": "http://example.com/vocab#geometry",
-    "id": "http://example.com/vocab#id",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "circa": "geojson:circa",
+    "coordinates": "geojson:coordinates",
     "datetime": {
-      "@id": "http://www.w3.org/2006/time#inXSDDateTime",
+      "@id": "geojson:datetime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "properties": "http://example.com/vocab#properties",
+    "description": "http://purl.org/dc/terms/description",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
+    "geometry": "geojson:geometry",
+    "id": "@id",
+    "properties": "geojson:properties",
     "start": {
-      "@id": "http://www.w3.org/2006/time#hasBeginning",
+      "@id": "geojson:start",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "stop": {
-      "@id": "http://www.w3.org/2006/time#hasEnding",
+      "@id": "geojson:stop",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "type": "http://example.com/vocab#type",
-    "when": "http://example.com/vocab#when"
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "when": "geojson:when"
   },
   "geometry": {
     "coordinates": [

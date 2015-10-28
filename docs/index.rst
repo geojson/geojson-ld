@@ -37,8 +37,9 @@ GeoJSON data.
 .. code-block:: json
 
     { "@context": {
-        "FeatureCollection": "http://example.com/vocab#FeatureCollection",
-        "Feature": "http://example.com/vocab#Feature",
+        "geojson": "http://ld.geojson.org/vocab#",
+        "FeatureCollection": "geojson:FeatureCollection",
+        "Feature": "geojson:Feature",
         "Place": "http://schema.org/Place",
         "description": "http://schema.org/description"
         },

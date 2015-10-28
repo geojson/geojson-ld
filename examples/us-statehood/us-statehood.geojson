@@ -1,42 +1,40 @@
 {
   "@context": {
-    "@context": {
-      "Polygon": "http://example.com/vocab#Polygon", 
-      "Feature": "http://example.com/vocab#Feature", 
-      "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
-      "MultiLineString": "http://example.com/vocab#MultiLineString", 
-      "id": "http://example.com/vocab#id", 
-      "features": {
-        "@id": "http://example.com/vocab#coordinates", 
-        "@container": "@set"
-      }, 
-      "title": "http://purl.org/dc/terms/title", 
-      "when": "http://example.com/vocab#when", 
-      "coordinates": {
-        "@id": "http://example.com/vocab#coordinates"
-      }, 
-      "earliestStop": "http://example.com/vocab#earliestStop", 
-      "start": "http://www.w3.org/2006/time#hasBeginning", 
-      "latestStart": "http://example.com/vocab#latestStart", 
-      "MultiPolygon": "http://example.com/vocab#MultiPolygon", 
-      "type": "http://example.com/vocab#type", 
-      "Instant": "http://www.w3.org/2006/time#Instant", 
-      "description": "http://purl.org/dc/terms/description", 
-      "Interval": "http://www.w3.org/2006/time#Instant", 
-      "stop": "http://www.w3.org/2006/time#hasEnding", 
-      "bbox": {
-        "@id": "http://example.com/vocab#bbox", 
-        "@container": "@list"
-      }, 
-      "properties": "http://example.com/vocab#properties", 
-      "MultiPoint": "http://example.com/vocab#MultiPoint", 
-      "Point": "http://example.com/vocab#Point", 
-      "geometry": "http://example.com/vocab#geometry", 
-      "FeatureCollection": "http://example.com/vocab#FeatureCollection", 
-      "GeometryCollection": "http://example.com/vocab#GeometryCollection", 
-      "LineString": "http://example.com/vocab#LineString"
-    }
-  }, 
+    "Polygon": "http://example.com/vocab#Polygon", 
+    "Feature": "http://example.com/vocab#Feature", 
+    "datetime": "http://www.w3.org/2006/time#inXSDDateTime", 
+    "MultiLineString": "http://example.com/vocab#MultiLineString", 
+    "id": "http://example.com/vocab#id", 
+    "features": {
+      "@id": "http://example.com/vocab#coordinates", 
+      "@container": "@set"
+    }, 
+    "title": "http://purl.org/dc/terms/title", 
+    "when": "http://example.com/vocab#when", 
+    "coordinates": {
+      "@id": "http://example.com/vocab#coordinates"
+    }, 
+    "earliestStop": "http://example.com/vocab#earliestStop", 
+    "start": "http://www.w3.org/2006/time#hasBeginning", 
+    "latestStart": "http://example.com/vocab#latestStart", 
+    "MultiPolygon": "http://example.com/vocab#MultiPolygon", 
+    "type": "http://example.com/vocab#type", 
+    "Instant": "http://www.w3.org/2006/time#Instant", 
+    "description": "http://purl.org/dc/terms/description", 
+    "Interval": "http://www.w3.org/2006/time#Instant", 
+    "stop": "http://www.w3.org/2006/time#hasEnding", 
+    "bbox": {
+      "@id": "http://example.com/vocab#bbox", 
+      "@container": "@list"
+    }, 
+    "properties": "http://example.com/vocab#properties", 
+    "MultiPoint": "http://example.com/vocab#MultiPoint", 
+    "Point": "http://example.com/vocab#Point", 
+    "geometry": "http://example.com/vocab#geometry", 
+    "FeatureCollection": "http://example.com/vocab#FeatureCollection", 
+    "GeometryCollection": "http://example.com/vocab#GeometryCollection", 
+    "LineString": "http://example.com/vocab#LineString"
+  },
   "type": "FeatureCollection", 
   "features": [
     {
@@ -309,7 +307,7 @@
       }, 
       "when": {
         "start": "1787-12-07", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -926,7 +924,7 @@
       }, 
       "when": {
         "start": "1787-12-12", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -1651,7 +1649,7 @@
       }, 
       "when": {
         "start": "1787-12-18", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -3588,7 +3586,7 @@
       }, 
       "when": {
         "start": "1788-01-02", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -3829,7 +3827,7 @@
       }, 
       "when": {
         "start": "1788-01-09", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -4454,7 +4452,7 @@
       }, 
       "when": {
         "start": "1788-02-06", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -5447,7 +5445,7 @@
       }, 
       "when": {
         "start": "1788-04-28", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -7168,7 +7166,7 @@
       }, 
       "when": {
         "start": "1788-05-23", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -8049,7 +8047,7 @@
       }, 
       "when": {
         "start": "1788-06-21", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -9798,7 +9796,7 @@
       }, 
       "when": {
         "start": "1788-06-25", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -10975,7 +10973,7 @@
       }, 
       "when": {
         "start": "1788-07-26", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -12332,7 +12330,7 @@
       }, 
       "when": {
         "start": "1789-12-21", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -12547,7 +12545,7 @@
       }, 
       "when": {
         "start": "1790-05-29", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -13336,7 +13334,7 @@
       }, 
       "when": {
         "start": "1791-03-04", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -15211,7 +15209,7 @@
       }, 
       "when": {
         "start": "1792-06-01", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -16332,7 +16330,7 @@
       }, 
       "when": {
         "start": "1796-06-01", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -17225,7 +17223,7 @@
       }, 
       "when": {
         "start": "1803-03-01", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -19490,7 +19488,7 @@
       }, 
       "when": {
         "start": "1812-04-30", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -20443,7 +20441,7 @@
       }, 
       "when": {
         "start": "1816-12-11", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -22240,7 +22238,7 @@
       }, 
       "when": {
         "start": "1817-12-10", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -23753,7 +23751,7 @@
       }, 
       "when": {
         "start": "1818-12-03", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -24498,7 +24496,7 @@
       }, 
       "when": {
         "start": "1819-12-14", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -25735,7 +25733,7 @@
       }, 
       "when": {
         "start": "1820-03-15", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -27188,7 +27186,7 @@
       }, 
       "when": {
         "start": "1821-08-10", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -28585,7 +28583,7 @@
       }, 
       "when": {
         "start": "1836-06-15", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -29958,7 +29956,7 @@
       }, 
       "when": {
         "start": "1837-01-26", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -32177,7 +32175,7 @@
       }, 
       "when": {
         "start": "1845-03-03", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -36210,7 +36208,7 @@
       }, 
       "when": {
         "start": "1845-12-29", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -37419,7 +37417,7 @@
       }, 
       "when": {
         "start": "1846-12-28", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -38656,7 +38654,7 @@
       }, 
       "when": {
         "start": "1848-05-29", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -41667,7 +41665,7 @@
       }, 
       "when": {
         "start": "1850-09-09", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -43652,7 +43650,7 @@
       }, 
       "when": {
         "start": "1858-05-11", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -44785,7 +44783,7 @@
       }, 
       "when": {
         "start": "1859-02-14", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -45230,7 +45228,7 @@
       }, 
       "when": {
         "start": "1861-01-29", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -47227,7 +47225,7 @@
       }, 
       "when": {
         "start": "1863-06-20", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -48164,7 +48162,7 @@
       }, 
       "when": {
         "start": "1864-10-31", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -48881,7 +48879,7 @@
       }, 
       "when": {
         "start": "1867-03-01", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -49066,7 +49064,7 @@
       }, 
       "when": {
         "start": "1876-08-01", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -50175,7 +50173,7 @@
       }, 
       "when": {
         "start": "1889-11-02", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -50892,7 +50890,7 @@
       }, 
       "when": {
         "start": "1889-11-02", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -52129,7 +52127,7 @@
       }, 
       "when": {
         "start": "1889-11-08", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -52870,7 +52868,7 @@
       }, 
       "when": {
         "start": "1889-11-11", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -54407,7 +54405,7 @@
       }, 
       "when": {
         "start": "1890-07-03", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -54608,7 +54606,7 @@
       }, 
       "when": {
         "start": "1890-07-10", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -54753,7 +54751,7 @@
       }, 
       "when": {
         "start": "1896-01-04", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -56318,7 +56316,7 @@
       }, 
       "when": {
         "start": "1907-11-16", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -56499,7 +56497,7 @@
       }, 
       "when": {
         "start": "1912-01-06", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -57248,7 +57246,7 @@
       }, 
       "when": {
         "start": "1912-02-14", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -67239,7 +67237,7 @@
       }, 
       "when": {
         "start": "1959-01-03", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {
@@ -68966,7 +68964,7 @@
       }, 
       "when": {
         "start": "1959-08-21", 
-        "type": "Interval"
+        "@type": "Interval"
       }, 
       "type": "Feature", 
       "properties": {

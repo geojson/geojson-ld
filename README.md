@@ -25,24 +25,34 @@ the "properties" grab bag is perhaps the best thing that JSON-LD can do for
 GeoJSON data. Note that `http://example.com/vocab#` is used as the `@vocab`
 URI until GeoJSON-LD is published.
 
-```
-    { "@context": {
-        "@vocab": "http://example.com/vocab#",
-        "Place": "http://schema.org/Place",
-        "description": "http://schema.org/description"
-        },
-      "type": "FeatureCollection",
-      "@id": "http://example.com/collections/1",
-      "features": [ 
-        { "type": "Feature",
-          "@type": ["Feature", "Place"],
-          "id": 1,
-          "@id": "http://example.com/collections/1/features/1",
-          "properties":
-            { "description": "The first place" },
-          ...
-          } ]
-      }
+```json
+{ 
+  "@context": {
+    "@vocab": "http://example.com/vocab#",
+    "Place": "http://schema.org/Place",
+    "name": "http://schema.org/name"
+  },
+  "type": "FeatureCollection",
+  "@id": "http://example.com/collections/1",
+  "features": [
+    { 
+      "type": "Feature",
+      "@type": ["Feature", "Place"],
+      "id": 1,
+      "@id": "http://example.com/collections/1/features/1",
+      "properties": {"name": "Fort Collins, Colorado" },
+      "geometry": {"type": "Point", "coordinates": [-105.078056, 40.559167]}
+    },
+    { 
+      "type": "Feature",
+      "@type": ["Feature", "Place"],
+      "id": 1,
+      "@id": "http://example.com/collections/1/features/1",
+      "properties": {"name": "Boulder, Colorado" },
+      "geometry": {"type": "Point", "coordinates": [-105.251945, 40.027435]}
+    }
+  ]
+}
 ```
 
 ## Development

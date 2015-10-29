@@ -22,12 +22,12 @@ Below is an example of using JSON-LD to declare that the features of
 a collection are also schema.org Places and that their "description" property
 is the same thing as a schema.org decription. Bringing optional namespaces to
 the "properties" grab bag is perhaps the best thing that JSON-LD can do for
-GeoJSON data.
+GeoJSON data. Note that `http://example.com/vocab#` is used as the `@vocab`
+URI until GeoJSON-LD is published.
 
 ```
     { "@context": {
-        "FeatureCollection": "http://example.com/vocab#FeatureCollection",
-        "Feature": "http://example.com/vocab#Feature",
+        "@vocab": "http://example.com/vocab#",
         "Place": "http://schema.org/Place",
         "description": "http://schema.org/description"
         },
@@ -51,4 +51,3 @@ This is a work in progress. See https://github.com/geojson/geojson-ld/issues.
 
 A demo vocabulary including the GeoJSON terms above is online at
 http://geojson.org/vocab.
-

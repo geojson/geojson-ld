@@ -27,7 +27,11 @@
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "geometry": "geojson:geometry",
+    "geometry": {
+      "@container": "x-geojson-geometry-container",
+      "@id": "geojson:geometry",
+      "@type": "http://www.opengis.net/ont/geosparql:wktLiteral"
+    },
     "id": "@id",
     "properties": "geojson:properties",
     "start": {

@@ -55,6 +55,10 @@ URI until GeoJSON-LD is published.
 }
 ```
 
+Paste the JSON text above into a Gist [like
+this](https://gist.github.com/sgillies/819fea9424da651a2d8a) and you'll see
+that it's ordinary GeoJSON as well as linked data.
+
 ## Development
 
 This is a work in progress. See https://github.com/geojson/geojson-ld/issues.

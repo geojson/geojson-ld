@@ -38,7 +38,7 @@ URI until GeoJSON-LD is published.
     { 
       "type": "Feature",
       "@type": ["Feature", "Place"],
-      "id": 1,
+      "id": "1",
       "@id": "http://example.com/collections/1/features/1",
       "properties": {"name": "Fort Collins, Colorado" },
       "geometry": {"type": "Point", "coordinates": [-105.078056, 40.559167]}
@@ -46,8 +46,8 @@ URI until GeoJSON-LD is published.
     { 
       "type": "Feature",
       "@type": ["Feature", "Place"],
-      "id": 1,
-      "@id": "http://example.com/collections/1/features/1",
+      "id": "2",
+      "@id": "http://example.com/collections/1/features/2",
       "properties": {"name": "Boulder, Colorado" },
       "geometry": {"type": "Point", "coordinates": [-105.251945, 40.027435]}
     }

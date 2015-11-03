@@ -24,6 +24,6 @@
     "id": "@id",
     "properties": "geojson:properties",
     "title": "http://purl.org/dc/terms/title",
-    "type": "@type",
+    "type": "@type"
   }
 }

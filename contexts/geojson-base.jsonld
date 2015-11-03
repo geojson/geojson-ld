@@ -20,7 +20,10 @@
       "@container": "@set",
       "@id": "geojson:features"
     },
-    "geometry": "geojson:geometry",
+    "geometry": {
+      "@id": "geojson:geometry",
+      "@type": "http://www.opengis.net/ont/geosparql:wktLiteral"
+    },
     "id": "@id",
     "properties": "geojson:properties",
     "title": "http://purl.org/dc/terms/title",

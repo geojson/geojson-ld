@@ -1,11 +1,9 @@
 {
   "@context": {
-    "geojson": "http://ld.geojson.org/vocab#",
+    "geojson": "http://geojson.org/vocab#",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
-    "Instant": "http://www.w3.org/2006/time#Instant",
-    "Interval": "http://www.w3.org/2006/time#Interval",
     "LineString": "geojson:LineString",
     "MultiLineString": "geojson:MultiLineString",
     "MultiPoint": "geojson:MultiPoint",
@@ -16,12 +14,7 @@
       "@container": "@list",
       "@id": "geojson:bbox"
     },
-    "circa": "geojson:circa",
     "coordinates": "geojson:coordinates",
-    "datetime": {
-      "@id": "geojson:datetime",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
@@ -30,16 +23,7 @@
     "geometry": "geojson:geometry",
     "id": "@id",
     "properties": "geojson:properties",
-    "start": {
-      "@id": "geojson:start",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "stop": {
-      "@id": "geojson:stop",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "title": "http://purl.org/dc/terms/title",
-    "type": "@type",
-    "when": "geojson:when"
+    "type": "@type"
   }
 }

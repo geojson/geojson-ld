@@ -1,6 +1,6 @@
 {
   "@context": {
-    "geojson": "http://geojson.org/vocab#",
+    "geojson": "https://purl.org/geojson/vocab#",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -15,7 +15,6 @@
       "@id": "geojson:bbox"
     },
     "coordinates": "geojson:coordinates",
-    "description": "http://purl.org/dc/terms/description",
     "features": {
       "@container": "@set",
       "@id": "geojson:features"
@@ -23,7 +22,6 @@
     "geometry": "geojson:geometry",
     "id": "@id",
     "properties": "geojson:properties",
-    "title": "http://purl.org/dc/terms/title",
     "type": "@type"
   }
 }

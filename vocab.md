@@ -22,55 +22,55 @@ Below are linked data identifiers for the core GeoJSON types found in the [GeoJS
 
 ### <a name="FeatureCollection">FeatureCollection</a>
 
-*http://example.com/vocab#FeatureCollection*
+*https://purl.org/geojson/vocab#FeatureCollection*
 
 Description: See [RFC 7946 Section 3.3](https://tools.ietf.org/html/rfc7946#section-3.3).
 
 ### <a name="Feature">Feature</a>
 
-*http://example.com/vocab#Feature*
+*https://purl.org/geojson/vocab#Feature*
 
 Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2).
 
 ### <a name="Point">Point</a>
 
-*http://example.com/vocab#Point*
+*https://purl.org/geojson/vocab#Point*
 
 Description: See [RFC 7946 Section 3.1.2](https://tools.ietf.org/html/rfc7946#section-3.1.2).
 
 ### <a name="LineString">LineString</a>
 
-*http://example.com/vocab#LineString*
+*https://purl.org/geojson/vocab#LineString*
 
 Description: See [RFC 7946 Section 3.1.4](https://tools.ietf.org/html/rfc7946#section-3.1.4).
 
 ### <a name="Polygon">Polygon</a>
 
-*http://example.com/vocab#Polygon*
+*https://purl.org/geojson/vocab#Polygon*
 
 Description: See [RFC 7946 Section 3.1.6](https://tools.ietf.org/html/rfc7946#section-3.1.6).
 
 ### <a name="MultiPoint">MultiPoint</a>
 
-*http://example.com/vocab#MultiPoint*
+*https://purl.org/geojson/vocab#MultiPoint*
 
 Description: See [RFC 7946 Section 3.1.3](https://tools.ietf.org/html/rfc7946#section-3.1.3).
 
 ### <a name="MultiLineString">MultiLineString</a>
 
-*http://example.com/vocab#MultiLineString*
+*https://purl.org/geojson/vocab#MultiLineString*
 
 Description: See [RFC 7946 Section 3.1.5](https://tools.ietf.org/html/rfc7946#section-3.1.5).
 
 ### <a name="MultiPolygon">MultiPolygon</a>
 
-*http://example.com/vocab#MultiPolygon*
+*https://purl.org/geojson/vocab#MultiPolygon*
 
 Description: See [RFC 7946 Section 3.1.7](https://tools.ietf.org/html/rfc7946#section-3.1.7).
 
 ### <a name="GeometryCollection">GeometryCollection</a>
 
-*http://example.com/vocab#GeometryCollection*
+*https://purl.org/geojson/vocab#GeometryCollection*
 
 Description: See [RFC 7946 Section 3.1.8](https://tools.ietf.org/html/rfc7946#section-3.1.8).
 
@@ -82,31 +82,31 @@ Below are linked data identifiers for the core GeoJSON properties found in the
 
 ### <a name="bbox">bbox</a>
 
-*http://example.com/vocab#bbox*
+*https://purl.org/geojson/vocab#bbox*
 
 Description: See [RFC 7946 Section 5](https://tools.ietf.org/html/rfc7946#section-5).
 
 ### <a name="coordinates">coordinates</a>
 
-*http://example.com/vocab#coordinates*
+*https://purl.org/geojson/vocab#coordinates*
 
 Description: See [RFC 7946 Section 3.1.1](https://tools.ietf.org/html/rfc7946#section-3.1.1).
 
 ### <a name="features">features</a>
 
-*http://example.com/vocab#features*
+*https://purl.org/geojson/vocab#features*
 
 Description: See [RFC 7946 Section 3.3](https://tools.ietf.org/html/rfc7946#section-3.3).
 
 ### <a name="geometry">geometry</a>
 
-*http://example.com/vocab#geometry*
+*https://purl.org/geojson/vocab#geometry*
 
 Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2).
 
 ### <a name="id">id</a>
 
-*http://example.com/vocab#id*
+*https://purl.org/geojson/vocab#id*
 
 Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2).
 
@@ -114,14 +114,14 @@ In the base GeoJSON-LD context, [http://geojson.org/geojson-context.jsonld](http
 
 ### <a name="properties">properties</a>
 
-*http://example.com/vocab#properties*
+*https://purl.org/geojson/vocab#properties*
 
 Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2).
 These are properties of a **Feature** that are bounded by its spatial and temporal extents.
 
 ### <a name="type">type</a>
 
-*http://example.com/vocab#type*
+*https://purl.org/geojson/vocab#type*
 
 Description: See [RFC 7946 Section 3]https://tools.ietf.org/html/rfc7946#section-3).
 

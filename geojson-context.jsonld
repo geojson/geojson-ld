@@ -14,7 +14,10 @@
       "@container": "@list",
       "@id": "geojson:bbox"
     },
-    "coordinates": "geojson:coordinates",
+    "coordinates": {
+      "@container": "@list"
+      "@id": "geojson:coordinates",
+    },
     "features": {
       "@container": "@set",
       "@id": "geojson:features"

@@ -1,26 +1,28 @@
-geojson-ld
-==========
+---
+layout: home
+title: GeoJSON-LD
+--
 
-This document is also published at http://geojson.org/geojson-ld.
+# GeoJSON-LD
 
 A vocabulary and JSON-LD context for GeoJSON
 
-GeoJSON-LD 1.0 defines a base context for processing GeoJSON according
-to the [JSON-LD](https://www.w3.org/TR/json-ld/) processing model. When
-a JSON-LD processor encounters a GeoJSON document with the
-`application/geo+json` media type that does not contain a `@context` member, it
-may use the context defined here. JSON-LD implementations may add to the
-context defined here but must not override or change the meaning of its terms.
+GeoJSON-LD 1.0 defines a base context for processing GeoJSON according to the
+[JSON-LD](https://www.w3.org/TR/json-ld/) processing model. When a JSON-LD
+processor encounters a GeoJSON document with the `application/geo+json` media
+type that does not contain a `@context` member, it may use the context defined
+here. JSON-LD implementations may add to the context defined here but must not
+override or change the meaning of its terms.
 
 ## Vocabulary
 
 The GeoJSON-LD 1.0 vocabulary is published at
-[http://geojson.org/ld/vocab#](http://geojson.org/ld/vocab#).
+[http://geojson.org/geojson-ld/vocab#](http://geojson.org/geojson-ld/vocab#).
 
 ## Context
 
 The GeoJSON-LD 1.0 context is published at
-[http://geojson.org/ld/geojson-context.jsonld](http://geojson.org/ld/geojson-context.jsonld).
+[http://geojson.org/geojson-ld/geojson-context.jsonld](http://geojson.org/geojson-ld/geojson-context.jsonld).
 
 ## Example
 
@@ -103,5 +105,5 @@ are processed appropriately.
 
 ## See Also
 
-* [Activity Streams 2.0](https://www.w3.org/TR/activitystreams-core/), from which
-GeoJSON-LD gets the idea of a normative, default context.
+* [Activity Streams 2.0](https://www.w3.org/TR/activitystreams-core/), from
+  which GeoJSON-LD gets the idea of a normative, default context.

@@ -3,7 +3,7 @@ layout: home
 title: Proposed GeoJSON-LD Vocabulary
 ---
 
-# Proposed GeoJSON-LD Vocabulary
+# GeoJSON-LD Vocabulary
 
 See [https://github.com/geojson/geojson-ld](https://github.com/geojson/geojson-ld)
 for vocabulary developments.

@@ -1,0 +1,89 @@
+/**
+ * GeoJSON
+ *
+ *    Color Scheme
+ *
+ *        http://colorschemedesigner.com/#3x61Tw0w0w0w0
+ *
+ * @author    Tim "tschaub" Schaub
+ * @author    David "oodavid" King
+ */
+
+/* Use a better box model - http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+  * { box-sizing: border-box; }
+
+/* Basic Elements */
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 115%;
+    margin: 1em 2em 2em;
+    color: #34495E;
+  }
+  h1 {
+    text-align: center;
+    font-weight: 800;
+    color: #0B61A4;
+  }
+  a {
+    text-decoration: none;
+    color: #00AF64;
+  }
+  a:hover {
+    color: #007241;
+  }
+
+/* Splash page - centered column */
+  .splash {
+    width: 80%;
+    min-width: 450px;
+    margin: 0 auto;
+  }
+  .splash h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+
+/* Syntax Highlighting - see ./syntax.css */
+  .highlight pre {
+    font-size: 95%;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #eee;
+  }
+
+/**
+ * Spec style
+ */
+table.docinfo {
+  font-size: 95%;
+}
+table.docinfo th {
+  text-align: right;
+  vertical-align: top;
+  padding-right: 1em;
+}
+
+/** Other */
+.splash h1 span.fkin {
+  font-size: 1.2em;
+}
+
+/* Nav Highlighting */
+  #nav      {width: 300px; position: fixed; top: 0; left: 0;  bottom: 0; overflow-y: scroll; overflow-x: hidden;}
+  #content  {padding: 0 0 0 300px;}
+  /* Nav Styling */
+    #nav          {background-color: #EEEEEE; border: 5px solid #EEEEEE;}
+    #nav .first   {color: #A65f00;}
+    #nav .active  {color: #FF9200;}
+    #nav ul       {margin: 0; padding: 0 0 0 20px;}
+    #nav ul li    {margin: 0; padding: 0;}
+  /* Markdown Fixes */
+    #nav p        {display: none;} /* Output by extraneous newlines... */
+
+/* Minimalist scrollbars in webkit */
+  ::-webkit-scrollbar         {width: 12px;}
+  ::-webkit-scrollbar-track   {border-radius: 10px;                       -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+  ::-webkit-scrollbar-thumb   {border-radius: 10px; background: #AAAAAA;  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);}
+  ::-webkit-scrollbar-corner  {display: none;}

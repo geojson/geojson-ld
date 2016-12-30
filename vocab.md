@@ -8,13 +8,15 @@ title: Proposed GeoJSON-LD Vocabulary
 See [https://github.com/geojson/geojson-ld](https://github.com/geojson/geojson-ld)
 for vocabulary developments.
 
+A RDF/XML description of this vocabulary is published at
+[http://geojson.org/geojson-ld/vocab.rdf](http://geojson.org/geojson-ld/vocab.rdf).
+
 This document refers often to the [JSON-LD 1.0](http://www.w3.org/TR/json-ld/) W3C
 Recommendation.
 
-## Core Types
+## GeoJSON Elements
 
-Below are linked data identifiers for the core GeoJSON types found in the [GeoJSON
-1.0 Specification](geojson-spec.md).
+Below are linked data identifiers for the elements of [RFC 7946 GeoJSON](https://tools.ietf.org/html/rfc7946).
 
 ### <a name="FeatureCollection">FeatureCollection</a>
 

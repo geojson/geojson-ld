@@ -18,6 +18,8 @@ override or change the meaning of its terms.
 
 The GeoJSON-LD 1.0 vocabulary is published as RDF/XML at
 [http://geojson.org/geojson-ld/vocab.rdf](http://geojson.org/geojson-ld/vocab.rdf).
+An HTML version is published at
+[http://geojson.org/geojson-ld/vocab.html](http://geojson.org/geojson-ld/vocab.html).
 
 ## Namespace
 

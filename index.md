@@ -16,8 +16,12 @@ override or change the meaning of its terms.
 
 ## Vocabulary
 
-The GeoJSON-LD 1.0 vocabulary is published at
-[http://geojson.org/geojson-ld/vocab#](http://geojson.org/geojson-ld/vocab#).
+The GeoJSON-LD 1.0 vocabulary is published as RDF/XML at
+[http://geojson.org/geojson-ld/vocab.rdf](http://geojson.org/geojson-ld/vocab.rdf).
+
+## Namespace
+
+The GeoJSON-LD namespace is `https://purl.org/geojson/vocab#`.
 
 ## Context
 

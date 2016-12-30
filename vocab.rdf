@@ -1,0 +1,118 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:geojson="https://purl.org/geojson/vocab#"
+>
+
+<owl:Ontology rdf:about="http://purl.org/geojson/vocab#">
+
+    <dc:title>GeoJSON-LD vocabulary</dc:title>
+    <dc:description>A description of the RFC 7946 GeoJSON model. See https://github.com/geojson/geojson-ld for vocabulary developments.</dc:description>
+    <dc:creator>Sean Gillies</dc:creator>
+    <dc:format>application/rdf+xml</dc:format>
+    <dc:rights>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.</dc:rights>
+
+</owl:Ontology>
+
+<!-- Classes -->
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#FeatureCollection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">FeatureCollection</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.3.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#Feature">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">Feature</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.2.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#Point">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">Point</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.2.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#LineString">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">LineString</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.4.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#Polygon">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">Polygon</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.6.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#MultiPoint">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">MultiPoint</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.3.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#MultiLineString">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">MultiLineString</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.5.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#MultiPolygon">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">MultiPolygon</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.7.</rdfs:comment>
+</rdfs:Class>
+
+<rdfs:Class rdf:about="https://purl.org/geojson/vocab#GeometryCollection">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">GeometryCollection</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 3.1.8.</rdfs:comment>
+</rdfs:Class>
+
+<!-- Properties -->
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#bbox">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">bbox</rdfs:label>
+    <rdfs:comment xml:lang="en">See RFC 7946 Section 5.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#coordinates">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">coordinates</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.1.1.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#features">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">features</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.3.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#geometry">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">geometry</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.2.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#id">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">id</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.2.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#properties">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">properties</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.2.</rdfs:comment>
+</rdf:Property>
+
+<rdf:Property rdf:about="https://purl.org/geojson/vocab#type">
+    <rdfs:isDefinedBy rdf:resource="http://purl.org/geojson/vocab#" />
+    <rdfs:label xml:lang="en">type</rdfs:label>
+    <rdfs:comment xml:lang="en">RFC 7946 Section 3.</rdfs:comment>
+</rdf:Property>
+
+</rdf:RDF>

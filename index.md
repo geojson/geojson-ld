@@ -1,7 +1,7 @@
 ---
 layout: home
 title: GeoJSON-LD
---
+---
 
 # GeoJSON-LD
 

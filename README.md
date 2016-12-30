@@ -15,12 +15,12 @@ context defined here but must not override or change the meaning of its terms.
 ## Vocabulary
 
 The GeoJSON-LD 1.0 vocabulary is published at
-[http://geojson.org/vocab#](http://geojson.org/vocab#).
+[http://geojson.org/ld/vocab#](http://geojson.org/ld/vocab#).
 
 ## Context
 
 The GeoJSON-LD 1.0 context is published at
-[http://geojson.org/geojson-context.jsonld](http://geojson.org/geojson-context.jsonld).
+[http://geojson.org/ld/geojson-context.jsonld](http://geojson.org/ld/geojson-context.jsonld).
 
 ## Example
 
@@ -29,7 +29,7 @@ Pasting the following GeoJSON-LD document
 ```json
 {
   "@context": {
-    "geojson": "http://geojson.org/vocab#",
+    "geojson": "https://purl.org/geojson/vocab#",
     "Feature": "geojson:Feature",
     "Point": "geojson:Point",
     "coordinates": "geojson:coordinates",
@@ -56,9 +56,9 @@ the following JSON-LD in expanded form.
 ```json
 [
   {
-    "http://geojson.org/vocab#geometry": [
+    "https://purl.org/geojson/vocab#geometry": [
       {
-        "http://geojson.org/vocab#coordinates": [
+        "https://purl.org/geojson/vocab#coordinates": [
           {
             "@value": 0
           },
@@ -67,12 +67,12 @@ the following JSON-LD in expanded form.
           }
         ],
         "@type": [
-          "http://geojson.org/vocab#Point"
+          "https://purl.org/geojson/vocab#Point"
         ]
       }
     ],
     "@id": "http://example.com/features/1",
-    "http://geojson.org/vocab#properties": [
+    "https://purl.org/geojson/vocab#properties": [
       {
         "http://purl.org/dc/terms/description": [
           {
@@ -87,7 +87,7 @@ the following JSON-LD in expanded form.
       }
     ],
     "@type": [
-      "http://geojson.org/vocab#Feature"
+      "https://purl.org/geojson/vocab#Feature"
     ]
   }
 ]

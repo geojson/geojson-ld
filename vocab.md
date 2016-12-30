@@ -11,10 +11,6 @@ for vocabulary developments.
 This document refers often to the [JSON-LD 1.0](http://www.w3.org/TR/json-ld/) W3C
 Recommendation.
 
-The *example.com* domain and *example.com/vocab#* URIs are used deliberately to 
-dissuade you from using the vocabulary terms before the work is finished.
-
-
 ## Core Types
 
 Below are linked data identifiers for the core GeoJSON types found in the [GeoJSON

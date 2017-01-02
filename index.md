@@ -32,7 +32,7 @@ The GeoJSON-LD 1.0 context is published at
 
 ## GitHub repository
 
-[https://github.com/geojson/geojson-ld]([https://github.com/geojson/geojson-ld)
+[https://github.com/geojson/geojson-ld](https://github.com/geojson/geojson-ld)
 
 ## Example
 

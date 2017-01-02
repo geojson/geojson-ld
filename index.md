@@ -30,6 +30,10 @@ The GeoJSON-LD namespace is `https://purl.org/geojson/vocab#`.
 The GeoJSON-LD 1.0 context is published at
 [http://geojson.org/geojson-ld/geojson-context.jsonld](http://geojson.org/geojson-ld/geojson-context.jsonld).
 
+## GitHub repository
+
+[https://github.com/geojson/geojson-ld]([https://github.com/geojson/geojson-ld)
+
 ## Example
 
 Pasting the following GeoJSON-LD document

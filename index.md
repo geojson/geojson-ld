@@ -5,7 +5,16 @@ title: GeoJSON-LD
 
 # GeoJSON-LD
 
-A vocabulary and JSON-LD context for GeoJSON
+*Author*: Sean Gillies (Mapbox)
+
+*Revision*: 1.0
+
+*Date*: 2017-01-03
+
+*Abstract*: A vocabulary and JSON-LD context for GeoJSON.
+
+*Copyright*: This work is licensed under a [Creative Commons Attribution 4.0
+International License](http://creativecommons.org/licenses/by/4.0/).
 
 GeoJSON-LD 1.0 defines a base context for processing GeoJSON according to the
 [JSON-LD](https://www.w3.org/TR/json-ld/) processing model. When a JSON-LD
@@ -35,7 +44,7 @@ The GeoJSON-LD 1.0 context is published at
 [https://github.com/geojson/geojson-ld](https://github.com/geojson/geojson-ld)
 
 ## Example
-
+i
 Pasting the following GeoJSON-LD document
 
 ```json
@@ -43,8 +52,26 @@ Pasting the following GeoJSON-LD document
   "@context": {
     "geojson": "https://purl.org/geojson/vocab#",
     "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
-    "coordinates": "geojson:coordinates",
+    "Polygon": "geojson:Polygon",
+    "bbox": {
+      "@container": "@list",
+      "@id": "geojson:bbox"
+    },
+    "coordinates": {
+      "@container": "@list",
+      "@id": "geojson:coordinates"
+    },
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
     "geometry": "geojson:geometry",
     "id": "@id",
     "properties": "geojson:properties",
@@ -72,10 +99,14 @@ the following JSON-LD in expanded form.
       {
         "https://purl.org/geojson/vocab#coordinates": [
           {
-            "@value": 0
-          },
-          {
-            "@value": 0
+            "@list": [
+              {
+                "@value": 0
+              },
+              {
+                "@value": 0
+              }
+            ]
           }
         ],
         "@type": [

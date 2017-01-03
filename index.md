@@ -5,15 +5,15 @@ title: GeoJSON-LD
 
 # GeoJSON-LD
 
-*Author*: Sean Gillies (Mapbox)
+**Author**: Sean Gillies (Mapbox)
 
-*Revision*: 1.0
+**Revision**: 1.0
 
-*Date*: 2017-01-03
+**Date**: 2017-01-03
 
-*Abstract*: A vocabulary and JSON-LD context for GeoJSON.
+**Abstract**: A vocabulary and JSON-LD context for GeoJSON.
 
-*Copyright*: This work is licensed under a [Creative Commons Attribution 4.0
+**Copyright**: This work is licensed under a [Creative Commons Attribution 4.0
 International License](http://creativecommons.org/licenses/by/4.0/).
 
 GeoJSON-LD 1.0 defines a base context for processing GeoJSON according to the
@@ -44,7 +44,7 @@ The GeoJSON-LD 1.0 context is published at
 [https://github.com/geojson/geojson-ld](https://github.com/geojson/geojson-ld)
 
 ## Example
-i
+
 Pasting the following GeoJSON-LD document
 
 ```json

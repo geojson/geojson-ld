@@ -106,7 +106,7 @@ Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#sect
 
 Description: See [RFC 7946 Section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2).
 
-In the base GeoJSON-LD context, [http://geojson.org/geojson-context.jsonld](http://geojson.org/geojson-context.jsonld), **id** is declared to be an alias for the JSON-LD [**@id** keyword](http://www.w3.org/TR/json-ld/#node-identifiers).
+In the base GeoJSON-LD context, [https://geojson.org/geojson-context.jsonld](https://geojson.org/geojson-context.jsonld), **id** is declared to be an alias for the JSON-LD [**@id** keyword](http://www.w3.org/TR/json-ld/#node-identifiers).
 
 ### <a name="properties">properties</a>
 
@@ -122,5 +122,5 @@ These are properties of a **Feature** that are bounded by its spatial and tempor
 Description: See [RFC 7946 Section 3]https://tools.ietf.org/html/rfc7946#section-3).
 
 In the base GeoJSON-LD context,
-[http://geojson.org/geojson-context.jsonld](http://geojson.org/geojson-context.jsonld),
+[https://geojson.org/geojson-context.jsonld](https://geojson.org/geojson-context.jsonld),
 **type** is declared to be an alias for `rdf:type`.

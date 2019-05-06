@@ -1,7 +1,7 @@
 geojson-ld
 ==========
 
-This document is also published at http://geojson.org/geojson-ld.
+This document is also published at https://geojson.org/geojson-ld.
 
 A vocabulary and JSON-LD context for GeoJSON
 
@@ -15,12 +15,12 @@ context defined here but must not override or change the meaning of its terms.
 ## Vocabulary
 
 The GeoJSON-LD 1.0 vocabulary is published at
-[http://geojson.org/ld/vocab#](http://geojson.org/ld/vocab#).
+[https://geojson.org/ld/vocab#](https://geojson.org/ld/vocab#).
 
 ## Context
 
 The GeoJSON-LD 1.0 context is published at
-[http://geojson.org/ld/geojson-context.jsonld](http://geojson.org/ld/geojson-context.jsonld).
+[https://geojson.org/ld/geojson-context.jsonld](https://geojson.org/ld/geojson-context.jsonld).
 
 ## Example
 

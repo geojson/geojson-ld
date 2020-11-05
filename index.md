@@ -136,14 +136,6 @@ the following JSON-LD in expanded form.
 ]
 ```
 
-## Outstanding issues
-
-Nested GeoJSON coordinate arrays are incompatible with the processing model
-of JSON-LD 1.0. There are no current best practices for addressing this issue.
-Applications that process GeoJSON as JSON-LD using the GeoJSON-LD 1.0 context
-must take extra steps not defined here to ensure that geometric coordinates
-are processed appropriately.
-
 ## See Also
 
 * [Activity Streams 2.0](https://www.w3.org/TR/activitystreams-core/), from

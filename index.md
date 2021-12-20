@@ -138,7 +138,7 @@ the following JSON-LD in expanded form.
 ```
 
 ## Note
-JSON-LD 1.0 [cannot process the "list of list" structure](https://www.w3.org/TR/2014/REC-json-ld-20140116/#dfn-list-object), so many GeoJSON shapes cannot be processed by JSON-LD 1.0 validators. The `"@version": 1.1` property has been added to the GeoJSON-LD context to tell JSON-LD processors to process GeoJSON under the Linked Data 1.1 schema, which [can process the "list of list" structure](https://www.w3.org/TR/json-ld11/#dfn-list-object).  
+JSON-LD 1.0 [cannot process the "list of list" structure](https://www.w3.org/TR/2014/REC-json-ld-20140116/#h_note_8), so many GeoJSON shapes cannot be processed by JSON-LD 1.0 validators. The `"@version": 1.1` property has been added to the GeoJSON-LD context to tell JSON-LD processors to process GeoJSON under the Linked Data 1.1 schema, which [can process the "list of list" structure](https://www.w3.org/TR/json-ld11/#example-82-specifying-that-a-collection-is-ordered-in-the-context).  
 
 ## See Also
 
